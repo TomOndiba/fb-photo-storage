@@ -1,6 +1,8 @@
 <?php
 
-// Replace the data below, calculate your keys and insert them into index.php
+// Replace the data below, calculate your keys and insert them into index.php if the provided keys in index.php stop working.
+// Before you authenticate with your own keys, make SURE that your app is set to "desktop" rather than "webapp" in the settings,
+// otherwise php will complain about there being no 'secret' in the returned session.
 
 require_once('facebook/facebook.php');
 require_once('facebook/facebook_desktop.php');

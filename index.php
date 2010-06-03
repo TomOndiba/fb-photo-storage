@@ -54,7 +54,8 @@ if(!empty($_POST)){
   } catch (Exception $e) {
     echo $e;
   }
-  echo $fbReturn['link'];
+  echo "Thumbnail: <a href=\"".$fbReturn['src_small']."\">".$fbReturn['src_small']."</a><br />";
+  echo "Photo: <a href=\"".$fbReturn['src_big']."\">".$fbReturn['src_big']."</a>";
 
 }
 else{
